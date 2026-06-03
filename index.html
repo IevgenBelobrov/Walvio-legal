@@ -1,111 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Walvio Legal</title>
 
 <style>
+:root {
+  --bg: #07111f;
+  --card: #101c2f;
+  --card-hover: #16263d;
+  --text: #f8fafc;
+  --muted: #9fb2c8;
+  --accent: #35c6c0;
+  --accent-2: #2f80ed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Inter, Arial, sans-serif;
-    background: #0f172a;
-    color: #f8fafc;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(53, 198, 192, 0.22), transparent 32%),
+    radial-gradient(circle at top right, rgba(47, 128, 237, 0.18), transparent 35%),
+    var(--bg);
+  color: var(--text);
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 80px 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 72px 24px;
 }
 
-.logo {
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 12px;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 72px;
 }
 
-.subtitle {
-    color: #94a3b8;
-    font-size: 18px;
-    margin-bottom: 50px;
+.logo-mark {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: 900;
+  color: white;
+  box-shadow: 0 20px 50px rgba(53, 198, 192, 0.25);
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.brand-name {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.hero {
+  max-width: 760px;
+  margin-bottom: 56px;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 8vw, 82px);
+  line-height: 0.95;
+  margin: 0 0 24px;
+  letter-spacing: -0.06em;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #ffffff, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .card {
-    flex: 1;
-    min-width: 280px;
-    background: #1e293b;
-    border-radius: 20px;
-    padding: 30px;
-    text-decoration: none;
-    color: white;
-    transition: all .2s ease;
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  padding: 34px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)), var(--card);
+  border: 1px solid rgba(255,255,255,0.08);
+  text-decoration: none;
+  color: var(--text);
+  transition: 0.25s ease;
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    background: #334155;
+  transform: translateY(-6px);
+  background: var(--card-hover);
+  border-color: rgba(53, 198, 192, 0.45);
 }
 
-.card-title {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.card::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: -60px;
+  bottom: -80px;
+  background: radial-gradient(circle, rgba(53,198,192,0.28), transparent 65%);
 }
 
-.card-description {
-    color: #cbd5e1;
+.card-label {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+
+.card h2 {
+  font-size: 30px;
+  margin: 0 0 14px;
+  letter-spacing: -0.04em;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.45;
+  margin: 0;
 }
 
 .footer {
-    margin-top: 80px;
-    color: #64748b;
-    font-size: 14px;
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #6f86a3;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .container {
+    padding: 44px 18px;
+  }
+
+  .brand {
+    margin-bottom: 52px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
 }
 </style>
 </head>
 
 <body>
+  <main class="container">
+    <header class="brand">
+      <div class="logo-mark">W</div>
+      <div>
+        <div class="brand-name">Walvio</div>
+        <div style="color: var(--muted); font-size: 14px;">your vision for wealth</div>
+      </div>
+    </header>
 
-<div class="container">
+    <section class="hero">
+      <h1>Legal center for <span class="gradient">Walvio</span></h1>
+      <p>
+        Legal information, privacy documentation, and terms governing the use of Walvio.
+      </p>
+    </section>
 
-<div class="logo">
-CashFlow AI
-</div>
+    <section class="cards">
+      <a class="card" href="privacy-policy.html">
+        <div class="card-label">Data protection</div>
+        <h2>Privacy Policy</h2>
+        <p>Learn how Walvio collects, processes, stores, and protects personal data.</p>
+      </a>
 
-<div class="subtitle">
-Legal information and user documentation.
-</div>
+      <a class="card" href="terms-of-use.html">
+        <div class="card-label">Legal terms</div>
+        <h2>Terms of Use</h2>
+        <p>Review the terms and conditions that apply when using Walvio.</p>
+      </a>
+    </section>
 
-<div class="card-container">
-
-<a class="card" href="privacy-policy.html">
-<div class="card-title">Privacy Policy</div>
-<div class="card-description">
-Learn how we collect, process and protect your data.
-</div>
-</a>
-
-<a class="card" href="terms-of-use.html">
-<div class="card-title">Terms of Use</div>
-<div class="card-description">
-Terms and conditions governing the use of CashFlow AI.
-</div>
-</a>
-
-</div>
-
-<div class="footer">
-© 2026 Walvio. All rights reserved.
-</div>
-
-</div>
-
+    <footer class="footer">
+      <div>© 2026 Walvio. All rights reserved.</div>
+      <div>Operated by Yevhen Bielobrov JDG, Poland.</div>
+    </footer>
+  </main>
 </body>
 </html>
