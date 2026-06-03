@@ -1,11 +1,328 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CashFlow AI Privacy Policy</title>
-</head>
-<body>
-    <h1>Privacy Policy</h1>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Walvio Privacy Policy</title>
 
-    <p>Coming soon...</p>
+<style>
+:root {
+  --bg: #07111f;
+  --panel: #101c2f;
+  --text: #f8fafc;
+  --muted: #9fb2c8;
+  --accent: #35c6c0;
+  --accent-2: #2f80ed;
+  --border: rgba(255,255,255,0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(53, 198, 192, 0.18), transparent 32%),
+    radial-gradient(circle at top right, rgba(47, 128, 237, 0.14), transparent 35%),
+    var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 56px 24px 90px;
+}
+
+.back {
+  display: inline-flex;
+  margin-bottom: 42px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.header {
+  margin-bottom: 42px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(53, 198, 192, 0.12);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(42px, 7vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  margin: 0 0 18px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.content {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)), var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 42px;
+}
+
+h2 {
+  margin-top: 44px;
+  margin-bottom: 14px;
+  font-size: 26px;
+  letter-spacing: -0.03em;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+p, li {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+strong {
+  color: var(--text);
+}
+
+ul {
+  padding-left: 22px;
+}
+
+.notice {
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(53, 198, 192, 0.1);
+  border: 1px solid rgba(53, 198, 192, 0.22);
+  margin: 26px 0;
+}
+
+.footer {
+  margin-top: 42px;
+  color: #6f86a3;
+  font-size: 14px;
+}
+
+a {
+  color: var(--accent);
+}
+
+@media (max-width: 760px) {
+  .container {
+    padding: 36px 18px 70px;
+  }
+
+  .content {
+    padding: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+  <main class="container">
+    <a class="back" href="index.html">← Back to Legal Center</a>
+
+    <header class="header">
+      <div class="badge">Data Protection</div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        This Privacy Policy explains how Walvio collects, uses, stores, and protects your personal data.
+      </p>
+    </header>
+
+    <section class="content">
+      <p><strong>Last updated:</strong> [DATE]</p>
+
+      <p>
+        Walvio is the marketing name of the CashFlow AI application. The Application is operated by
+        <strong>Yevhen Bielobrov</strong>, conducting business as a
+        <strong>Jednoosobowa działalność gospodarcza (JDG)</strong>, registered in Poland.
+      </p>
+
+      <p>
+        <strong>NIP:</strong> [ADD NIP]<br />
+        <strong>Registered address:</strong> [ADD ADDRESS]<br />
+        <strong>Contact:</strong> support@cashflowai.app<br />
+        <strong>Data protection contact:</strong> privacy@cashflowai.app
+      </p>
+
+      <div class="notice">
+        We do not sell your personal data. Walvio is designed to help users understand and manage their personal finances, not to exploit their data.
+      </div>
+
+      <h2>1. Scope of this Policy</h2>
+      <p>
+        This Privacy Policy applies to the Walvio mobile applications, web application, website, landing pages,
+        and related services. Some sections, such as cookies, apply only to the website or landing pages.
+      </p>
+
+      <h2>2. Personal Data We Collect</h2>
+      <p>We may collect the following categories of personal data:</p>
+      <ul>
+        <li><strong>Account Data:</strong> name, email address, authentication identifiers.</li>
+        <li><strong>Financial Data:</strong> transactions, categories, balances, cashflow records, and related financial inputs.</li>
+        <li><strong>Technical Data:</strong> IP address, device type, operating system, browser type, app version.</li>
+        <li><strong>Usage Data:</strong> interactions with features, session activity, product usage events.</li>
+        <li><strong>Website Data:</strong> cookies, analytics data, referral source, and landing page activity.</li>
+      </ul>
+
+      <h2>3. Purposes of Processing</h2>
+      <p>We process personal data to:</p>
+      <ul>
+        <li>provide, operate, and maintain the Application;</li>
+        <li>create and manage your account;</li>
+        <li>process financial records entered or imported by you;</li>
+        <li>generate cashflow analytics and insights;</li>
+        <li>improve product performance, usability, and security;</li>
+        <li>detect abuse, fraud, or unauthorized access;</li>
+        <li>communicate with you about the service.</li>
+      </ul>
+
+      <h2>4. Legal Basis under GDPR</h2>
+      <p>We process personal data based on:</p>
+      <ul>
+        <li><strong>Article 6(1)(b) GDPR</strong> — performance of a contract;</li>
+        <li><strong>Article 6(1)(f) GDPR</strong> — legitimate interests, including security, analytics, and product improvement, provided such interests do not override your rights;</li>
+        <li><strong>Article 6(1)(a) GDPR</strong> — consent, where required, for example for optional cookies or marketing communication;</li>
+        <li><strong>Article 6(1)(c) GDPR</strong> — compliance with legal obligations, where applicable.</li>
+      </ul>
+
+      <h2>5. Data Storage and Security</h2>
+      <p>
+        Your data is stored using secure cloud infrastructure, such as Microsoft Azure, preferably in the European Union where possible.
+      </p>
+      <p>We apply security measures including:</p>
+      <ul>
+        <li>encryption in transit using HTTPS/TLS;</li>
+        <li>encryption at rest where applicable;</li>
+        <li>role-based access controls;</li>
+        <li>logging and monitoring;</li>
+        <li>secure authentication mechanisms;</li>
+        <li>infrastructure practices aligned with OWASP recommendations.</li>
+      </ul>
+
+      <h2>6. Data Sharing</h2>
+      <p>We do not sell your personal data.</p>
+      <p>We may share limited data with trusted service providers, including:</p>
+      <ul>
+        <li>cloud infrastructure providers;</li>
+        <li>authentication providers such as Google or Apple;</li>
+        <li>analytics providers;</li>
+        <li>payment providers, if paid features are introduced.</li>
+      </ul>
+      <p>
+        These providers process data under contractual safeguards and only as necessary to provide the service.
+      </p>
+
+      <h2>7. International Data Transfers</h2>
+      <p>
+        If personal data is transferred outside the European Economic Area, we use appropriate safeguards,
+        such as Standard Contractual Clauses or other legally recognized transfer mechanisms.
+      </p>
+
+      <h2>8. Data Retention</h2>
+      <p>
+        We retain personal data for as long as your account is active, as long as necessary to provide the service,
+        or as required by applicable law.
+      </p>
+      <p>
+        After account deletion, personal and financial data is deleted, except for minimal technical or legal records
+        that may need to be retained under applicable law.
+      </p>
+
+      <h2>9. Your Rights</h2>
+      <p>Under GDPR, you have the right to:</p>
+      <ul>
+        <li>access your personal data;</li>
+        <li>correct inaccurate personal data;</li>
+        <li>request deletion of your personal data;</li>
+        <li>restrict processing;</li>
+        <li>object to processing;</li>
+        <li>request data portability;</li>
+        <li>withdraw consent where processing is based on consent.</li>
+      </ul>
+      <p>
+        To exercise your rights, contact us at <a href="mailto:privacy@cashflowai.app">privacy@cashflowai.app</a>.
+      </p>
+
+      <h2>10. Account and Data Deletion</h2>
+      <p>You can request deletion of your account and data:</p>
+      <ul>
+        <li>inside the Application, if this feature is available;</li>
+        <li>by email at <a href="mailto:privacy@cashflowai.app">privacy@cashflowai.app</a>.</li>
+      </ul>
+      <p>Deleted data may include account data, transactions, categories, balances, and cashflow records.</p>
+      <p>
+        Deletion requests are usually processed within 30 days after identity verification.
+      </p>
+
+      <h2>11. Cookies and Tracking</h2>
+      <p>
+        On our website and landing pages, we may use cookies and similar technologies for essential functionality,
+        analytics, performance monitoring, and user experience improvement.
+      </p>
+      <p>
+        Where required by law, we obtain your consent before using non-essential cookies.
+      </p>
+
+      <h2>12. Automated Processing and AI Insights</h2>
+      <p>
+        Walvio may use automated analytics and AI-based features to generate financial insights, forecasts, or suggestions.
+      </p>
+      <p>
+        These outputs are informational only and do not constitute financial, investment, legal, or tax advice.
+      </p>
+
+      <h2>13. Third-Party Data Sources</h2>
+      <p>
+        If you choose to connect third-party services, such as financial institutions, APIs, or import tools,
+        we may receive data from those providers to deliver the requested functionality.
+      </p>
+      <p>
+        We are not responsible for the accuracy or availability of third-party data sources.
+      </p>
+
+      <h2>14. Children</h2>
+      <p>
+        The Application is not intended for users under 18 years old. We do not knowingly collect personal data from children.
+      </p>
+
+      <h2>15. Changes to this Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. The updated version will be indicated by a new “Last updated” date.
+      </p>
+
+      <h2>16. Contact</h2>
+      <p>
+        Yevhen Bielobrov<br />
+        JDG, Poland<br />
+        Email: <a href="mailto:support@cashflowai.app">support@cashflowai.app</a><br />
+        Data protection: <a href="mailto:privacy@cashflowai.app">privacy@cashflowai.app</a>
+      </p>
+    </section>
+
+    <div class="footer">
+      © 2026 Walvio. All rights reserved.
+    </div>
+  </main>
 </body>
 </html>
+```
